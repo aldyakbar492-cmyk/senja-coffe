@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard Admin - Coffee Senja</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      background-color: #f8f9fa;
+      color: #333;
+      padding: 20px;
+    }
+    .header {
+      background: #ffffff;
+      padding: 20px 25px;
+      border-radius: 12px;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .header h1 {
+      font-size: 22px;
+      color: #4a2c2a; /* Warna khas Kopi */
+      font-weight: 700;
+    }
+    .btn-back {
+      text-decoration: none;
+      color: #ffffff;
+      background-color: #4a2c2a;
+      padding: 10px 18px;
+      border-radius: 8px;
+      font-size: 14px;
+      font-weight: 600;
+      transition: background 0.3s ease;
+    }
+    .btn-back:hover {
+      background-color: #351f1e;
+    }
+    .dashboard-card {
+      background: #ffffff;
+      padding: 15px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    }
+    iframe {
+      width: 100%;
+      height: 850px;
+      border: none;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <h1>Dashboard Analytics - Coffee Senja</h1>
+    <a href="index.html" class="btn-back">← Kembali ke Website</a>
+  </div>
+
+  <div class="dashboard-card">
+    <!-- GANTI BARIS IFRAME DI BAWAH INI DENGAN KODE EMBED DARIN LOOKER STUDIO -->
+<iframe width="600" height="450" src="https://datastudio.google.com/embed/reporting/61f72241-7d77-4c2a-b4aa-28d1969ec2bb/page/JF96F" frameborder="0" style="border:0" allowfullscreen sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox"></iframe>
+  </div>
+
+</body>
+</html>

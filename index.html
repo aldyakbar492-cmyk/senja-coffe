@@ -1,38 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
- 
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <!-- KODE DASHBOARD ANALITIK (Ditempel di sini) -->
-    <title>Document</title>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <!-- KODE DASHBOARD ANALITIK (Ditempel di sini) -->
+  <title>Document</title>
 </head>
+
 <body>
-    <nav class="navbar">
-  <div class="logo">Senja Coffe</div>
+  <nav class="navbar">
+    <div class="logo">Senja Coffe</div>
 
-  <!-- Tombol Hamburger untuk HP -->
-  <button class="menu-toggle" id="mobile-menu" aria-label="Toggle Menu">
-    <span class="bar"></span>
-    <span class="bar"></span>
-    <span class="bar"></span>
-  </button>
+    <!-- Tombol Hamburger untuk HP -->
+    <button class="menu-toggle" id="mobile-menu" aria-label="Toggle Menu">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </button>
 
-  <!-- Menu Navigasi + Tombol Pesan -->
-  <div class="nav-menu">
-    <ul class="nav-links">
-      <li><a href="#about">Tentang</a></li>
-      <li><a href="#menu">Menu</a></li>
-      <li><a href="#galeri">Galeri</a></li>
-      <li><a href="#lokasi">Lokasi</a></li>
-    </ul>
-  </div>
-</nav>
+    <!-- Menu Navigasi + Tombol Pesan -->
+    <div class="nav-menu">
+      <ul class="nav-links">
+        <li><a href="#about">Tentang</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#galeri">Galeri</a></li>
+        <li><a href="#lokasi">Lokasi</a></li>
+        <li><a href="admin.html">Dashboard Admin</a></li>
+      </ul>
+    </div>
+  </nav>
 
-<!-- HERO SECTION -->
+  <!-- HERO SECTION -->
   <section class="hero">
     <div class="hero-content">
       <h1>Senja Coffe</h1>
@@ -52,14 +55,17 @@
           <span class="badge">Tentang Kami</span>
           <h2>Senja Coffe dengan Kopi Berkualitas</h2>
           <p>
-            Kami hadir sebagai ruang kumpul yang nyaman di tengah kota. Menyajikan varian kopi nusantara, minuman non-kopi segar, serta hidangan pendamping yang dibuat sepenuh hati.
+            Kami hadir sebagai ruang kumpul yang nyaman di tengah kota. Menyajikan varian kopi nusantara, minuman
+            non-kopi segar, serta hidangan pendamping yang dibuat sepenuh hati.
           </p>
           <p>
-            Dengan suasana yang hangat, tempat ini dirancang khusus agar cocok untuk nongkrong bareng teman, fokus nugas, maupun sekadar melepas penat di penghujung hari.
+            Dengan suasana yang hangat, tempat ini dirancang khusus agar cocok untuk nongkrong bareng teman, fokus
+            nugas, maupun sekadar melepas penat di penghujung hari.
           </p>
         </div>
         <div class="about-image">
-          <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?q=80&w=800&auto=format&fit=crop" alt="Suasana Cafe Ruang Tengah">
+          <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?q=80&w=800&auto=format&fit=crop"
+            alt="Suasana Cafe Ruang Tengah">
         </div>
       </div>
     </div>
@@ -75,10 +81,10 @@
         <h2>Menu Unggulan</h2>
         <p>Pilihan favorit yang siap menemani waktu santai Anda di Ruang Tengah.</p>
       </div>
-      
+
       <div class="menu-grid">
         <!-- Menu 1 -->
-        <div class="menu-card">
+        <div class="menu-card" onclick="gtag('event', 'select_item', { item_list_name: 'Menu Kopi', items: [{ item_name: 'Kopi Senja Utama', price: 22000 }] });">
           <img src="image/menu kopi gula aren (1).jpg" alt="Kopi Susu Aren">
           <div class="menu-info">
             <h3>Kopi Susu Ruang Tengah</h3>
@@ -86,7 +92,7 @@
             <span class="price">Rp 22.000</span>
           </div>
         </div>
-        <div class="menu-card">
+        <div class="menu-card" onclick="gtag('event', 'select_item', { item_list_name: 'Menu Kopi', items: [{ item_name: 'Kopi latte', price: 22000 }] });">
           <!-- menu 5 -->
           <img src="image/menu kopi gula aren (2).jpg" alt="Kopi Susu Aren">
           <div class="menu-info">
@@ -97,8 +103,9 @@
         </div>
 
         <!-- Menu 2 -->
-        <div class="menu-card">
-          <img src="https://images.unsplash.com/photo-1551030173-122aabc4489c?q=80&w=400&auto=format&fit=crop" alt="Americano">
+        <div class="menu-card" onclick="gtag('event', 'select_item', { item_list_name: 'Menu Kopi', items: [{ item_name: 'Americano / Manual Brew', price: 20000 }] });">
+          <img src="https://images.unsplash.com/photo-1551030173-122aabc4489c?q=80&w=400&auto=format&fit=crop"
+            alt="Americano">
           <div class="menu-info">
             <h3>Americano / Manual Brew</h3>
             <p>Seduhan biji kopi lokal dengan kualitas premium.</p>
@@ -107,7 +114,7 @@
         </div>
 
         <!-- Menu 3 -->
-        <div class="menu-card">
+        <div class="menu-card" onclick="gtag('event', 'select_item', { item_list_name: 'Menu Kopi', items: [{ item_name: 'Creame Matcha Latte', price: 25000 }] });" >
           <img src="image/matcha  _ matcha latte _ matcha aesthetic _ iced….jpg" alt="Matcha Latte">
           <div class="menu-info">
             <h3>Creamy Matcha Latte</h3>
@@ -117,7 +124,7 @@
         </div>
 
         <!-- Menu 4 -->
-        <div class="menu-card">
+        <div class="menu-card" onclick="gtag('event', 'select_item', { item_list_name: 'Menu Kopi', items: [{ item_name: 'Butter Croissant', price: 23000 }] });">
           <img src="image/🥐 Croissant Breakfast Sandwich 🎨 A buttery….jpg" alt="Croissant">
           <div class="menu-info">
             <h3>Butter Croissant</h3>
@@ -127,8 +134,9 @@
         </div>
 
         <!-- Menu 5 -->
-        <div class="menu-card">
-          <img src="https://images.unsplash.com/photo-1630384060421-cb20d0e0649d?q=80&w=400&auto=format&fit=crop" alt="Mix Platter">
+        <div class="menu-card" onclick="gtag('event', 'select_item', { item_list_name: 'Menu Kopi', items: [{ item_name: 'Frinds price', price: 20000 }] });">
+          <img src="https://images.unsplash.com/photo-1630384060421-cb20d0e0649d?q=80&w=400&auto=format&fit=crop"
+            alt="Mix Platter">
           <div class="menu-info">
             <h3>French Fries & Platter</h3>
             <p>Kentang goreng renyah dan aneka camilan gurih yang disajikan hangat.</p>
@@ -137,7 +145,7 @@
         </div>
       </div>
     </div>
-     <!-- MENU UNGGULAN SECTION end-->
+    <!-- MENU UNGGULAN SECTION end-->
   </section>
 
 
@@ -151,7 +159,7 @@
         <p>Sudut-sudut hangat dan momen berkesan di Ruang Tengah.</p>
       </div>
 
-     <div class="gallery-grid">
+      <div class="gallery-grid">
         <!-- Foto 1 -->
         <div class="gallery-item">
           <img src="image/area outdor.jpg" alt="Suasana Indoor Cafe">
@@ -218,7 +226,7 @@
 
 
   <!-- lokasi -->
-   <!-- LOKASI & OPERASIONAL SECTION -->
+  <!-- LOKASI & OPERASIONAL SECTION -->
   <section id="lokasi" class="location-section">
     <div class="container">
       <div class="section-header">
@@ -246,13 +254,9 @@
 
         <!-- Peta Google Maps (Embed) -->
         <div class="location-map">
-          <iframe 
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.9702202613295!2d107.6117583!3d-6.8929553!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e6579f1f0a17%3A0x6b86e2467d013098!2sBandung%2C%20West%20Java!5e0!3m2!1sen!2sid!4v1700000000000!5m2!1sen!2sid" 
-            width="100%" 
-            height="300" 
-            style="border:0; border-radius: 12px;" 
-            allowfullscreen="" 
-            loading="lazy" 
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.9702202613295!2d107.6117583!3d-6.8929553!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e6579f1f0a17%3A0x6b86e2467d013098!2sBandung%2C%20West%20Java!5e0!3m2!1sen!2sid!4v1700000000000!5m2!1sen!2sid"
+            width="100%" height="300" style="border:0; border-radius: 12px;" allowfullscreen="" loading="lazy"
             referrerpolicy="no-referrer-when-downgrade">
           </iframe>
         </div>
@@ -263,56 +267,62 @@
 
 
   <!-- footer -->
- <footer class="main-footer">
-  <div class="footer-container">
-    
-    <!-- Kolom 1: Profil Cafe -->
-    <div class="footer-box">
-      <h3>Coffee Senja</h3>
-      <p>Menyajikan kopi pilihan terbaik untuk menemani senja dan setiap momen berharga Anda.</p>
-    </div>
+  <footer class="main-footer">
+    <div class="footer-container">
 
-    <!-- Kolom 2: Jam Operasional -->
-    <div class="footer-box">
-      <h3>Jam Buka</h3>
-      <p>Senin - Jumat: 10.00 - 22.00 WIB</p>
-      <p>Sabtu - Minggu: 10.00 - 23.00 WIB</p>
-    </div>
-
-    <!-- Kolom 3: Media Sosial -->
-    <div class="footer-box">
-      <h3>Ikuti Kami</h3>
-      <div class="social-links">
-       <a href="https://instagram.com/namacafeanda" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
-    <a href="https://tiktok.com/@namacafeanda" target="_blank" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
-    <a href="https://wa.me/6281234567890" target="_blank" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+      <!-- Kolom 1: Profil Cafe -->
+      <div class="footer-box">
+        <h3>Coffee Senja</h3>
+        <p>Menyajikan kopi pilihan terbaik untuk menemani senja dan setiap momen berharga Anda.</p>
       </div>
+
+      <!-- Kolom 2: Jam Operasional -->
+      <div class="footer-box">
+        <h3>Jam Buka</h3>
+        <p>Senin - Jumat: 10.00 - 22.00 WIB</p>
+        <p>Sabtu - Minggu: 10.00 - 23.00 WIB</p>
+      </div>
+
+      <!-- Kolom 3: Media Sosial -->
+      <div class="footer-box">
+        <h3>Ikuti Kami</h3>
+        <div class="social-links">
+          <a href="https://instagram.com/namacafeanda" target="_blank" aria-label="Instagram"><i
+              class="fa-brands fa-instagram"></i></a>
+          <a href="https://tiktok.com/@namacafeanda" target="_blank" aria-label="TikTok"><i
+              class="fa-brands fa-tiktok"></i></a>
+          <a href="https://wa.me/6281234567890" target="_blank" aria-label="WhatsApp"><i
+              class="fa-brands fa-whatsapp"></i></a>
+        </div>
+      </div>
+
     </div>
 
-  </div>
-
-  <!-- Hak Cipta -->
-  <div class="footer-bottom">
-    <p>&copy; 2026 Coffee Senja. All Rights Reserved.</p>
-  </div>
-</footer>
-<!-- footer end -->
+    <!-- Hak Cipta -->
+    <div class="footer-bottom">
+      <p>&copy; 2026 Coffee Senja. All Rights Reserved.</p>
+    </div>
+  </footer>
+  <!-- footer end -->
 
   <!-- TOMBOL WHATSAPP MELAYANG (Floating Button) -->
-  <a href="https://wa.me/6281234567890?text=Halo%20Ruang%20Tengah,%20saya%20mau%20tanya/reservasi" class="wa-float" target="_blank" aria-label="Chat WhatsApp">
+  <a href="https://wa.me/6281234567890?text=Halo%20Ruang%20Tengah,%20saya%20mau%20tanya/reservasi" class="wa-float"
+    target="_blank" aria-label="Chat WhatsApp" onclick="gtag('event', 'click_whatsapp', {'event_category': 'Kontak', 'event_label': 'Tombol WA Utama'});" 
+   class="btn">>
     💬 Chat WhatsApp
   </a>
   <!-- lokasi end -->
-<script src="index.js"></script>
- <!-- Google tag (gtag.js) -->
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-6BTFYG63EV"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <script src="index.js"></script>
+  <!-- Google tag (gtag.js) -->
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-6BTFYG63EV"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-  gtag('config', 'G-6BTFYG63EV');
-</script>
+    gtag('config', 'G-6BTFYG63EV');
+  </script>
 </body>
+
 </html>
