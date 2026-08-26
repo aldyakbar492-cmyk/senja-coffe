@@ -5,6 +5,35 @@
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+
+/* banner diskon */
+.announcement-bar {
+  background: #2c1d11; /* Warna cokelat gelap */
+  color: #ffffff;
+  text-align: center;
+  padding: 8px 15px;
+  font-size: 0.85rem;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+}
+
+/* Styling Badge Status Toko */
+.status-badge {
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  display: inline-block;
+}
+.status-open {
+  background: #e6f4ea;
+  color: #137333;
+}
+.status-closed {
+  background: #fce8e6;
+  color: #c5221f;
+}
+
 /* ////////////////////NAVBAR DESKTOP//////////// */
 .navbar {
   display: flex;
@@ -669,4 +698,123 @@
   padding-top: 15px;
   font-size: 13px;
   color: #888888;
+}
+
+
+/* //////////////////Styling Slider Testimoni */
+.testimonials {
+  background: #f0e6df;
+  padding: 40px 20px;
+  margin-top: 50px;
+  text-align: center;
+  border-radius: 12px;
+}
+
+.testimonial-slider-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  max-width: 700px;
+  margin: 20px auto 0;
+  position: relative;
+}
+
+.testi-container {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  gap: 20px;
+  padding: 10px 5px;
+  scrollbar-width: none; /* Sembunyikan scrollbar di Firefox */
+}
+
+.testi-container::-webkit-scrollbar {
+  display: none; /* Sembunyikan scrollbar di Chrome/Safari */
+}
+
+.testi-card {
+  min-width: 280px;
+  max-width: 280px;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  font-style: italic;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  flex-shrink: 0;
+}
+
+.testi-author {
+  margin-top: 10px;
+  font-weight: bold;
+  font-style: normal;
+  color: #6f4e37;
+}
+
+/* Tombol Panah Geser */
+.slide-btn {
+  background: #6f4e37;
+  color: white;
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-weight: bold;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  transition: 0.2s;
+  z-index: 10;
+}
+
+.slide-btn:hover {
+  background: #2c1d11;
+}
+
+/* Styling Tombol Filter Menu */
+.filter-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 25px;
+  flex-wrap: wrap;
+}
+
+.filter-btn {
+  border: 2px solid #6f4e37;
+  background: transparent;
+  color: #6f4e37;
+  padding: 8px 18px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.filter-btn.active, .filter-btn:hover {
+  background: #6f4e37;
+  color: #ffffff;
+}
+
+
+/* Styling Section Spotify */
+.music-section {
+  text-align: center;
+  padding: 40px 20px;
+  max-width: 800px;
+  margin: 40px auto 0;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.music-section h2 {
+  color: #6f4e37;
+  margin-bottom: 8px;
+}
+
+.spotify-container {
+  margin-top: 20px;
+  border-radius: 12px;
+  overflow: hidden;
 }

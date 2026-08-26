@@ -13,8 +13,14 @@
 </head>
 
 <body>
+  <!-- Banner Promo Paling Atas -->
+<div class="announcement-bar">
+  📢 Promo Spesial Senja: Diskon 20% Beli 2 Varian Kopi Setiap Jam 16.00 - 18.00!
+</div>
   <nav class="navbar">
     <div class="logo">Senja Coffe</div>
+     <!-- Badge Status Toko -->
+<div id="store-status" class="status-badge">Memuat status...</div>
 
     <!-- Tombol Hamburger untuk HP -->
     <button class="menu-toggle" id="mobile-menu" aria-label="Toggle Menu">
@@ -72,6 +78,13 @@
   </section>
   <!-- tentag kami section end -->
 
+<!-- Tombol Filter Kategori -->
+<div class="filter-container">
+  <button class="filter-btn active" onclick="filterMenu('all', 'Semua Menu')">Semua Menu</button>
+  <button class="filter-btn" onclick="filterMenu('coffee', 'Kopi')">Kopi</button>
+  <button class="filter-btn" onclick="filterMenu('non-coffee', 'Non-Kopi')">Non-Kopi</button>
+  <button class="filter-btn" onclick="filterMenu('snack', 'Makanan')">Snack</button>
+</div>
 
   <!-- MENU UNGGULAN SECTION -->
   <section id="menu" class="menu-section">
@@ -84,7 +97,7 @@
 
       <div class="menu-grid">
         <!-- Menu 1 -->
-        <div class="menu-card" onclick="gtag('event', 'select_item', { item_list_name: 'Menu Kopi', items: [{ item_name: 'Kopi Senja Utama', price: 22000 }] });">
+        <div class="menu-card coffee" onclick="gtag('event', 'select_item', { item_list_name: 'Menu Kopi', items: [{ item_name: 'Kopi Senja Utama', price: 22000 }] });">
           <img src="image/menu kopi gula aren (1).jpg" alt="Kopi Susu Aren">
           <div class="menu-info">
             <h3>Kopi Susu Ruang Tengah</h3>
@@ -92,7 +105,7 @@
             <span class="price">Rp 22.000</span>
           </div>
         </div>
-        <div class="menu-card" onclick="gtag('event', 'select_item', { item_list_name: 'Menu Kopi', items: [{ item_name: 'Kopi latte', price: 22000 }] });">
+        <div class="menu-card coffee" onclick="gtag('event', 'select_item', { item_list_name: 'Menu Kopi', items: [{ item_name: 'Kopi latte', price: 22000 }] });">
           <!-- menu 5 -->
           <img src="image/menu kopi gula aren (2).jpg" alt="Kopi Susu Aren">
           <div class="menu-info">
@@ -103,7 +116,7 @@
         </div>
 
         <!-- Menu 2 -->
-        <div class="menu-card" onclick="gtag('event', 'select_item', { item_list_name: 'Menu Kopi', items: [{ item_name: 'Americano / Manual Brew', price: 20000 }] });">
+        <div class="menu-card coffee" onclick="gtag('event', 'select_item', { item_list_name: 'Menu Kopi', items: [{ item_name: 'Americano / Manual Brew', price: 20000 }] });">
           <img src="https://images.unsplash.com/photo-1551030173-122aabc4489c?q=80&w=400&auto=format&fit=crop"
             alt="Americano">
           <div class="menu-info">
@@ -114,7 +127,16 @@
         </div>
 
         <!-- Menu 3 -->
-        <div class="menu-card" onclick="gtag('event', 'select_item', { item_list_name: 'Menu Kopi', items: [{ item_name: 'Creame Matcha Latte', price: 25000 }] });" >
+        <div class="menu-card non-coffee" onclick="gtag('event', 'select_item', { item_list_name: 'Menu Kopi', items: [{ item_name: 'Creame Matcha Latte', price: 25000 }] });" >
+          <img src="image/matcha  _ matcha latte _ matcha aesthetic _ iced….jpg" alt="Matcha Latte">
+          <div class="menu-info">
+            <h3>Creamy Matcha Latte</h3>
+            <p>Matcha jepang racikan spesial dipadukan susu creamy yang lembut.</p>
+            <span class="price">Rp 25.000</span>
+          </div>
+        </div>
+        <!-- Menu 3 -->
+        <div class="menu-card non-coffee" onclick="gtag('event', 'select_item', { item_list_name: 'Menu Kopi', items: [{ item_name: 'Creame Matcha Latte', price: 25000 }] });" >
           <img src="image/matcha  _ matcha latte _ matcha aesthetic _ iced….jpg" alt="Matcha Latte">
           <div class="menu-info">
             <h3>Creamy Matcha Latte</h3>
@@ -124,7 +146,7 @@
         </div>
 
         <!-- Menu 4 -->
-        <div class="menu-card" onclick="gtag('event', 'select_item', { item_list_name: 'Menu Kopi', items: [{ item_name: 'Butter Croissant', price: 23000 }] });">
+        <div class="menu-card snack" onclick="gtag('event', 'select_item', { item_list_name: 'Menu Kopi', items: [{ item_name: 'Butter Croissant', price: 23000 }] });">
           <img src="image/🥐 Croissant Breakfast Sandwich 🎨 A buttery….jpg" alt="Croissant">
           <div class="menu-info">
             <h3>Butter Croissant</h3>
@@ -134,7 +156,7 @@
         </div>
 
         <!-- Menu 5 -->
-        <div class="menu-card" onclick="gtag('event', 'select_item', { item_list_name: 'Menu Kopi', items: [{ item_name: 'Frinds price', price: 20000 }] });">
+        <div class="menu-card snack" onclick="gtag('event', 'select_item', { item_list_name: 'Menu Kopi', items: [{ item_name: 'Frinds price', price: 20000 }] });">
           <img src="https://images.unsplash.com/photo-1630384060421-cb20d0e0649d?q=80&w=400&auto=format&fit=crop"
             alt="Mix Platter">
           <div class="menu-info">
@@ -224,6 +246,52 @@
   </section>
 
 
+<!-- Section Spotify Playlist Coffee Senja -->
+<section class="music-section">
+  <h2>Temani Senjamu dengan Musik</h2>
+  <p>Dengarkan playlist pilihan yang diputar di cafe Coffee Senja</p>
+  
+  <div class="spotify-container" onclick="gtag('event', 'play_spotify', {'event_category': 'Interaksi', 'event_label': 'Playlist Spotify'});">
+    <!-- Embed Player Spotify (Playlist Coffee Shop Hits) -->
+    <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/3w3y8KPTfNeOKPiqUTakBh?utm_source=generator&si=c15e4b788b194059" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+  </div>
+</section>
+
+ <!-- Section Testimoni Slider -->
+<section class="testimonials">
+  <h2 style="color: #6f4e37;">Apa Kata Mereka?</h2>
+  
+  <div class="testimonial-slider-wrapper">
+    <!-- Tombol Panah Kiri -->
+    <button class="slide-btn" onclick="slideTesti(-1)">❮</button>
+
+    
+    <!-- Kontainer Kartu yang Digeser -->
+    <div class="testi-container" id="testiContainer">
+      <div class="testi-card">
+        "Kopi Senja Utamanya nagih banget! Tempatnya pas buat santai habis kerja."
+        <div class="testi-author">⭐ ⭐ ⭐ ⭐ ⭐ - Andi K.</div>
+      </div>
+      <div class="testi-card">
+        "Matcha lattenya berasa banget mewahnya, snacknya juga masih hangat pas sampe."
+        <div class="testi-author">⭐ ⭐ ⭐ ⭐ ⭐ - Rina M.</div>
+      </div>
+      <div class="testi-card">
+        "Pelayanannya ramah banget, pas sore dapet promo diskon lagi!"
+        <div class="testi-author">⭐ ⭐ ⭐ ⭐ ⭐ - Budi S.</div>
+      </div>
+      <div class="testi-card">
+        "Espresso senjanya mantap, bikin melek seharian pas ngoding."
+        <div class="testi-author">⭐ ⭐ ⭐ ⭐ ⭐ - Dimas P.</div>
+      </div>
+    </div>
+
+    <!-- Tombol Panah Kanan -->
+    <button class="slide-btn" onclick="slideTesti(1)">❯</button>
+  </div>
+</section>
+
+
 
   <!-- lokasi -->
   <!-- LOKASI & OPERASIONAL SECTION -->
@@ -263,7 +331,6 @@
       </div>
     </div>
   </section>
-
 
 
   <!-- footer -->
@@ -308,7 +375,7 @@
   <!-- TOMBOL WHATSAPP MELAYANG (Floating Button) -->
   <a href="https://wa.me/6281234567890?text=Halo%20Ruang%20Tengah,%20saya%20mau%20tanya/reservasi" class="wa-float"
     target="_blank" aria-label="Chat WhatsApp" onclick="gtag('event', 'click_whatsapp', {'event_category': 'Kontak', 'event_label': 'Tombol WA Utama'});" 
-   class="btn">>
+   class="btn">
     💬 Chat WhatsApp
   </a>
   <!-- lokasi end -->
